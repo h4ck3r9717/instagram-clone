@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <form method="POST" class="col-6 no-padding" style="margin-top: 9rem; text-align: center; margin-left: 16rem;">
+        {% csrf_token %}
+   
+        <div class="card bg-dark text-white text-center">
+            <img src="{{post.image.url}}" class="card-img" alt="delete">
+            <div class="card-img-overlay" style="margin-top: 11rem;">
+              <h5 class="card-title" style="color: green;">{{ post.description }}</h5>
+                 
+              <p class="card-text" style="color: red;"> <strong> Are you sure you want to delete {{post.title}}?</p>
+              <p class="card-text">
+                <button class="btn btn-outline-primary" type="submit">Yes</button>
+                <a href="{% url 'homepage:post-detail' object.id %}" class="btn btn-outline-secondary">Cancel</a>
+              </p>
+            </div>
+          </div>
+    </form>
+</div>
+   
+{% endblock content %}

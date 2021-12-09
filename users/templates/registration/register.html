@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   
+ 
+  <div class="container" style="margin-top: 8rem; margin-bottom: 8rem; ">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-6">
+            <img src="https://i.gifer.com/YYZE.gif">
+          </div>
+     
+          <div class="col col-lg-4" style="background-color: wheat;">
+    
+          <h2 class="text-center">Register</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+        {{form.as_p}}
+        <center><button class="btn btn-outline-info" value="Register" type="submit">Register</center>
+        </fieldset>
+    </form>
+    
+   Already have an account? <a href="{% url 'login' %}">login</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+
+ </div>
+     
+          <div class="col col-lg-3" style="margin-top: 2rem; padding: 10px;">
+            <p class="text-center">Get the app</p>
+            <!--<div class="container">-->
+              <div class="row">
+                <div class="col" style="background-color: black; margin-left: 1rem;">
+                  <i class="fab fa-apple" style="color: white; font-size: 7vh;"></i><p style="color: white;">Download on the <br><strong>AppStore</strong></p>
+                </div>
+                <div class="col col-lg-1">
+
+                </div>
+                <div class="col" style="background-color: black; ">
+                  <i class="fab fa-google-play" style="color: #3bccff; font-size: 7vh;"></i><p style="color: white;">Get it on <br><strong>GooglePlay</strong></p>
+                </div>
+              </div>
+    </div>
+</div></div></div>
+
+{% endblock %}
