@@ -24,7 +24,6 @@ ALLOWED_HOSTS = []
 # Application definition
 INSTALLED_APPS = [
     'cloudinary',
-    'clicks',
     'crispy_forms',
     'django_bootstrap5',
     'django.contrib.admin',
