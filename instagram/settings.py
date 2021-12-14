@@ -25,7 +25,6 @@ import os
 import django_heroku
 import dj_database_url
 from decouple import config,Csv
-
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', False)
@@ -33,7 +32,7 @@ DEBUG = os.environ.get('DEBUG', False)
 if config('MODE')=="dev":
    DATABASES = {
        'default': {
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
+           'ENGINE': 'django.db.backends.postgresql',
            'NAME': config('DB_NAME'),
            'USER': config('DB_USER'),
            'PASSWORD': config('DB_PASSWORD'),
