@@ -14,18 +14,22 @@ upload a picture, comment and like their favorite posts.
 
 
 
-##### Setup Instructions and Installation
+# Prerequisites
 
+To work with instagram-clone App you need to have some few prerequisites.
 
-To run the application locally;
-- create an empty folder in your machine
-- git clone the repo by *git clone repo-url*
-- cd in the project folder, activate the virtual environment by running *pipenv shell*
-- run the application on server *python manage.py runserver*
+- Python3.9
 
-To run the hosted application, visit the provided link:
+- pip
 
+- django 
 
+- Code/text editor **Visul studio code** which is the best
+
+- Terminal
+
+# Project setup instructions
+You can install this app by cloning the repository from this link https://github.com/Shawn9717/instagram-clone.git
 
 ## [Live link](https://ruggiinstagram.herokuapp.com/)
 
@@ -39,7 +43,7 @@ Want to contribute? Great!
 To fix a bug or enhance an existing module, follow these steps:
 - Fork the repo
 - Create a new branch (git checkout -b improve-feature)
-- Make the appropriate changes in the files
+- Make the appropriate changes in the files 
 - Add changes to reflect the changes made
 - Commit your changes (git commit -am 'Improve feature')
 - Push to the branch (git push origin improve-feature)
